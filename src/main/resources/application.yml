@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /bootcamp
+
+spring:
+  #dados da conexão com o banco
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1234
+  #diretivas do jpa
+  jpa:
+    show-sql: true
+    #explicita o dialeto do banco de dados que o spring vai usar
+    database-plataform: org.hibernate.dialect.PostgreSQLDialect
+    #comandos abaixo são para criar coisas automaticas no bd
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
