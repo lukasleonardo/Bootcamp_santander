@@ -7,15 +7,15 @@ spring:
   #dados da conexão com o banco
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 1234
+    url: postgres://mwhyudkujjynqe:28b57d31626bd447e42705b08fd334b70a970191226cf5cdcef94e64502da2da@ec2-3-217-219-146.compute-1.amazonaws.com:5432/dccspqqcecc6lj
+    username: mwhyudkujjynqe
+    password: 28b57d31626bd447e42705b08fd334b70a970191226cf5cdcef94e64502da2da
   #diretivas do jpa
   jpa:
     show-sql: true
     #explicita o dialeto do banco de dados que o spring vai usar
     database-plataform: org.hibernate.dialect.PostgreSQLDialect
     #comandos abaixo são para criar coisas automaticas no bd
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: none
